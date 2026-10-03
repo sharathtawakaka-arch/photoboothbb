@@ -15,4 +15,6 @@ Camera access is requested by the browser. Use `localhost` or HTTPS and allow ca
 
 ## Deploy
 
-Pushing to `main` automatically builds and deploys the site to GitHub Pages using the workflow in `.github/workflows/pages.yml`.
+In the repository settings, open **Pages** and set the build and deployment source to **GitHub Actions** once. GitHub restricts the workflow token from enabling Pages itself.
+
+After that, pushing to `main` automatically builds and deploys the site using `.github/workflows/pages.yml`. You can also rerun the existing workflow from the Actions tab.
